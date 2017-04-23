@@ -1,0 +1,19 @@
+<!--
+* @Author: orlando
+* @Date:   2017-04-13 20:54:11
+* @Last Modified by:   orlando
+* @Last Modified time: 2017-04-13 22:14:00
+-->
+
+
+{{#each listado as |obj key|}}
+<div class="item">
+	<span class="img"><img src="{{obj.thumbnail}}" alt=""></span>
+    <span class="title">{{obj.title}}</span>
+
+    <span class="price">$ {{obj.price}}</span>
+
+    <span class="more"><a href="view/{{id}}?q={{../q}}">ver más...</a></span>
+</div>
+{{/each}}
+

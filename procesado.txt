@@ -1,0 +1,502 @@
+Statistical profiling result from isolate-0x35b2db0-v8.log, (526 ticks, 45 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     23    4.4%          /lib/x86_64-linux-gnu/libc-2.23.so
+      2    0.4%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    0.8%    0.8%  KeyedLoadIC: A keyed load IC from the snapshot
+      2    0.4%    0.4%  LazyCompile: ~Readable.read _stream_readable.js:271:35
+      2    0.4%    0.4%  Builtin: CallFunction_ReceiverIsNotNullOrUndefined
+      1    0.2%    0.2%  Stub: StoreTransitionStub
+      1    0.2%    0.2%  Stub: StoreFieldStub
+      1    0.2%    0.2%  Stub: InternalArrayNoArgumentConstructorStub
+      1    0.2%    0.2%  Stub: FastNewObjectStub
+      1    0.2%    0.2%  Stub: CallConstructStub
+      1    0.2%    0.2%  LazyCompile: ~socketOnWrap _http_server.js:588:22
+      1    0.2%    0.2%  LazyCompile: ~replace native string.js:132:23
+      1    0.2%    0.2%  LazyCompile: ~readableAddChunk _stream_readable.js:147:26
+      1    0.2%    0.2%  LazyCompile: ~exec native regexp.js:116:30
+      1    0.2%    0.2%  LazyCompile: ~Module._findPath module.js:151:28
+      1    0.2%    0.2%  LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/path-to-regexp/index.js:66:68
+      1    0.2%    0.2%  LazyCompile: *stat module.js:23:14
+      1    0.2%    0.2%  KeyedLoadIC: A keyed load IC from the snapshot {1}
+      1    0.2%    0.2%  Handler: undefined
+      1    0.2%    0.2%  Handler: startsWith
+      1    0.2%    0.2%  Handler: length
+      1    0.2%    0.2%  Handler: An IC handler from the snapshot
+      1    0.2%    0.2%  Function: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/on-finished/index.js:1:11
+      1    0.2%    0.2%  Builtin: CallFunction_ReceiverIsAny
+      1    0.2%    0.2%  Builtin: ArgumentsAdaptorTrampoline
+
+ [C++]:
+   ticks  total  nonlib   name
+     66   12.5%   13.2%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     37    7.0%    7.4%  write
+     30    5.7%    6.0%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+     24    4.6%    4.8%  syscall
+      6    1.1%    1.2%  v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
+      5    1.0%    1.0%  v8::internal::IncrementalMarking::Step(long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::IncrementalMarking::ForceMarkingAction, v8::internal::IncrementalMarking::ForceCompletionAction)
+      5    1.0%    1.0%  _IO_vfprintf
+      4    0.8%    0.8%  v8::internal::IncrementalMarking::MarkObject(v8::internal::Heap*, v8::internal::HeapObject*)
+      4    0.8%    0.8%  v8::internal::Deserializer::ReadData(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
+      4    0.8%    0.8%  node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.6%    0.6%  void v8::internal::LookupIterator::Start<false>()
+      3    0.6%    0.6%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::MarkMapContents(v8::internal::Heap*, v8::internal::Map*)
+      3    0.6%    0.6%  v8::internal::Scanner::ScanIdentifierOrKeyword()
+      3    0.6%    0.6%  v8::internal::Operand::Operand(v8::internal::Register, int)
+      3    0.6%    0.6%  v8::internal::JsonParser<false>::Advance()
+      3    0.6%    0.6%  v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      2    0.4%    0.4%  vsnprintf
+      2    0.4%    0.4%  v8::internal::Zone::New(unsigned long)
+      2    0.4%    0.4%  v8::internal::TypeFeedbackMetadata::GetKind(v8::internal::FeedbackVectorSlot) const
+      2    0.4%    0.4%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitCode(v8::internal::Map*, v8::internal::HeapObject*)
+      2    0.4%    0.4%  v8::internal::SharedFunctionInfo::DebugName()
+      2    0.4%    0.4%  v8::internal::Scope::DeserializeScopeChain(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::Context*, v8::internal::Scope*)
+      2    0.4%    0.4%  v8::internal::Scope::AllocateReceiver()
+      2    0.4%    0.4%  v8::internal::Scanner::ScanNumber(bool)
+      2    0.4%    0.4%  v8::internal::Scanner::Scan()
+      2    0.4%    0.4%  v8::internal::RelocIterator::next()
+      2    0.4%    0.4%  v8::internal::RegExpQuantifier::ToNode(int, int, bool, v8::internal::RegExpTree*, v8::internal::RegExpCompiler*, v8::internal::RegExpNode*, bool) [clone .part.357]
+      2    0.4%    0.4%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseBinaryExpression(int, bool, v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      2    0.4%    0.4%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseAssignmentExpression(bool, v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      2    0.4%    0.4%  v8::internal::Parser::ParseStatementList(v8::internal::ZoneList<v8::internal::Statement*>*, int, bool*)
+      2    0.4%    0.4%  v8::internal::Parser::Internalize(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Script>, bool)
+      2    0.4%    0.4%  v8::internal::LChunk::MarkEmptyBlocks()
+      2    0.4%    0.4%  v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      2    0.4%    0.4%  v8::internal::Heap::RecordWrite(v8::internal::Object*, int, v8::internal::Object*)
+      2    0.4%    0.4%  v8::internal::Heap::IteratePromotedObjectPointers(v8::internal::HeapObject*, unsigned char*, unsigned char*, bool, void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
+      2    0.4%    0.4%  v8::internal::HashTable<v8::internal::StringTable, v8::internal::StringTableShape, v8::internal::HashTableKey*>::FindEntry(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      2    0.4%    0.4%  v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<true>::ScanJsonString<true>()
+      2    0.4%    0.4%  v8::internal::BufferedUtf16CharacterStream::ReadBlock()
+      2    0.4%    0.4%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      2    0.4%    0.4%  v8::internal::Assembler::emit_mov(v8::internal::Register, v8::internal::Operand const&, int)
+      2    0.4%    0.4%  node::TLSWrap::Start(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.4%    0.4%  node::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.4%    0.4%  int v8::internal::BinarySearch<(v8::internal::SearchMode)1, v8::internal::DescriptorArray>(v8::internal::DescriptorArray*, v8::internal::Name*, int, int*)
+      2    0.4%    0.4%  bn_mul_mont
+      2    0.4%    0.4%  __xstat
+      2    0.4%    0.4%  __lll_unlock_wake
+      2    0.4%    0.4%  __libc_malloc
+      1    0.2%    0.2%  void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      1    0.2%    0.2%  void v8::internal::HGraph::Run<v8::internal::HDeadCodeEliminationPhase>()
+      1    0.2%    0.2%  void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::StaticScavengeVisitor>(v8::internal::Heap*, v8::internal::HeapObject*, int, int)
+      1    0.2%    0.2%  void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::RecordMigratedSlotVisitor>(v8::internal::HeapObject*, int, int, v8::internal::RecordMigratedSlotVisitor*) [clone .isra.441]
+      1    0.2%    0.2%  void std::__introsort_loop<v8::internal::Smi**, long, v8::internal::EnumIndexComparator<v8::internal::NameDictionary> >(v8::internal::Smi**, v8::internal::Smi**, long, v8::internal::EnumIndexComparator<v8::internal::NameDictionary>)
+      1    0.2%    0.2%  void node::StreamBase::JSMethod<node::TLSWrap, &node::StreamBase::Shutdown>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  v8::platform::DefaultPlatform::PopTaskInMainThreadDelayedQueue(v8::Isolate*)
+      1    0.2%    0.2%  v8::internal::VariableProxy::AssignFeedbackVectorSlots(v8::internal::Isolate*, v8::internal::FeedbackVectorSpec*, v8::internal::FeedbackVectorSlotCache*)
+      1    0.2%    0.2%  v8::internal::TransitionArray::SearchTransition(v8::internal::Map*, v8::internal::PropertyKind, v8::internal::Name*, v8::internal::PropertyAttributes)
+      1    0.2%    0.2%  v8::internal::TransitionArray::ReplaceTransitions(v8::internal::Handle<v8::internal::Map>, v8::internal::Object*)
+      1    0.2%    0.2%  v8::internal::TransitionArray::Insert(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>, v8::internal::SimpleTransitionFlag)
+      1    0.2%    0.2%  v8::internal::TextNode::Accept(v8::internal::NodeVisitor*)
+      1    0.2%    0.2%  v8::internal::StubCache::Set(v8::internal::Name*, v8::internal::Map*, v8::internal::Code*)
+      1    0.2%    0.2%  v8::internal::StringTableCleaner<false, true>::VisitPointers(v8::internal::Object**, v8::internal::Object**)
+      1    0.2%    0.2%  v8::internal::StringTable::LookupString(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>)
+      1    0.2%    0.2%  v8::internal::String::SlowFlatten(v8::internal::Handle<v8::internal::ConsString>, v8::internal::PretenureFlag)
+      1    0.2%    0.2%  v8::internal::String::SlowEquals(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.2%    0.2%  v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      1    0.2%    0.2%  v8::internal::String::GetFlatContent()
+      1    0.2%    0.2%  v8::internal::String::ComputeAndSetHash()
+      1    0.2%    0.2%  v8::internal::String::CalculateLineEnds(v8::internal::Handle<v8::internal::String>, bool)
+      1    0.2%    0.2%  v8::internal::StoreICNexus::ConfigurePolymorphic(v8::internal::List<v8::internal::Handle<v8::internal::Map>, v8::internal::FreeStoreAllocationPolicy>*, v8::internal::List<v8::internal::Handle<v8::internal::Code>, v8::internal::FreeStoreAllocationPolicy>*)
+      1    0.2%    0.2%  v8::internal::StoreIC::Store(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::Object::StoreFromKeyed)
+      1    0.2%    0.2%  v8::internal::StoreBuffer::MoveEntriesToRememberedSet()
+      1    0.2%    0.2%  v8::internal::StaticMarkingVisitor<v8::internal::MarkCompactMarkingVisitor>::VisitMap(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.2%    0.2%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitSharedFunctionInfo(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.2%    0.2%  v8::internal::SharedFunctionInfo::SearchOptimizedCodeMap(v8::internal::Context*, v8::internal::BailoutId)
+      1    0.2%    0.2%  v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::ObjectVisitor*)
+      1    0.2%    0.2%  v8::internal::Scope::LookupRecursive(v8::internal::VariableProxy*, v8::internal::Scope::BindingKind*, v8::internal::AstNodeFactory*)
+      1    0.2%    0.2%  v8::internal::Scope::AllocateParameterLocals(v8::internal::Isolate*)
+      1    0.2%    0.2%  v8::internal::Scope::AllocateNonParameterLocalsAndDeclaredGlobals(v8::internal::Isolate*)
+      1    0.2%    0.2%  v8::internal::Scanner::Next()
+      1    0.2%    0.2%  v8::internal::Runtime_NotifyDeoptimized(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.2%  v8::internal::Runtime::GetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::RememberedSet<(v8::internal::PointerDirection)1>::ClearInvalidSlots(v8::internal::Heap*)
+      1    0.2%    0.2%  v8::internal::RelocInfoWriter::Write(v8::internal::RelocInfo const*)
+      1    0.2%    0.2%  v8::internal::RelocInfoWriter::FlushPosition() [clone .part.103]
+      1    0.2%    0.2%  v8::internal::RegExpParser::ParseRegExp(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::FlatStringReader*, v8::base::Flags<v8::internal::JSRegExp::Flag, int>, v8::internal::RegExpCompileData*)
+      1    0.2%    0.2%  v8::internal::RegExpParser::Advance()
+      1    0.2%    0.2%  v8::internal::RegExpMacroAssemblerX64::LoadCurrentCharacter(int, v8::internal::Label*, bool, int)
+      1    0.2%    0.2%  v8::internal::RegExpCompiler::RegExpCompiler(v8::internal::Isolate*, v8::internal::Zone*, int, v8::base::Flags<v8::internal::JSRegExp::Flag, int>, bool)
+      1    0.2%    0.2%  v8::internal::PropertyAccessCompiler::store_calling_convention()
+      1    0.2%    0.2%  v8::internal::PromotionQueue::insert(v8::internal::HeapObject*, int, bool)
+      1    0.2%    0.2%  v8::internal::PointersUpdatingVisitor::VisitPointer(v8::internal::Object**)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::ValidateExpression(v8::internal::ExpressionClassifier<v8::internal::ParserTraits> const*, bool*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParsePrimaryExpression(v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParsePostfixExpression(v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseMemberExpressionContinuation(v8::internal::Expression*, v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseArguments(v8::internal::Scanner::Location*, v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*, bool*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::IsValidPattern(v8::internal::Expression*)
+      1    0.2%    0.2%  v8::internal::ParserBase<v8::internal::ParserTraits>::BindingPatternUnexpectedToken(v8::internal::ExpressionClassifier<v8::internal::ParserTraits>*)
+      1    0.2%    0.2%  v8::internal::Parser::Parser(v8::internal::ParseInfo*)
+      1    0.2%    0.2%  v8::internal::Parser::ParseVariableDeclarations(v8::internal::ParserBase<v8::internal::ParserTraits>::VariableDeclarationContext, v8::internal::Parser::DeclarationParsingResult*, v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.2%    0.2%  v8::internal::Parser::ParseStatementAsUnlabelled(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.2%    0.2%  v8::internal::Parser::ParseLazy(v8::internal::Isolate*, v8::internal::ParseInfo*, v8::internal::Utf16CharacterStream*)
+      1    0.2%    0.2%  v8::internal::Parser::ParseForStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.2%    0.2%  v8::internal::PagedSpace::AllocateRawUnaligned(int, v8::internal::PagedSpace::UpdateSkipList)
+      1    0.2%    0.2%  v8::internal::Operand::Operand(v8::internal::Operand const&, int)
+      1    0.2%    0.2%  v8::internal::ObjectLiteral::CalculateEmitStore(v8::internal::Zone*)
+      1    0.2%    0.2%  v8::internal::Object::GetRootMap(v8::internal::Isolate*)
+      1    0.2%    0.2%  v8::internal::NamedLoadHandlerCompiler::ComputeLoadNonexistent(v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>)
+      1    0.2%    0.2%  v8::internal::NameDictionaryBase<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::FindEntry(v8::internal::Handle<v8::internal::Name>)
+      1    0.2%    0.2%  v8::internal::MarkCompactCollector::ClearWeakCells(v8::internal::Object**, v8::internal::DependentCode**)
+      1    0.2%    0.2%  v8::internal::Map::WeakCellForMap(v8::internal::Handle<v8::internal::Map>)
+      1    0.2%    0.2%  v8::internal::Map::UpdateFieldType(int, v8::internal::Handle<v8::internal::Name>, v8::internal::Representation, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::Map::FindRootMap()
+      1    0.2%    0.2%  v8::internal::Map::EnsureDescriptorSlack(v8::internal::Handle<v8::internal::Map>, int)
+      1    0.2%    0.2%  v8::internal::Map::CopyAddDescriptor(v8::internal::Handle<v8::internal::Map>, v8::internal::Descriptor*, v8::internal::TransitionFlag)
+      1    0.2%    0.2%  v8::internal::Map::ConnectTransition(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::SimpleTransitionFlag)
+      1    0.2%    0.2%  v8::internal::MacroAssembler::TailCallRuntime(v8::internal::Runtime::FunctionId)
+      1    0.2%    0.2%  v8::internal::MacroAssembler::MoveHeapObject(v8::internal::Register, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::MacroAssembler::LoadContext(v8::internal::Register, int)
+      1    0.2%    0.2%  v8::internal::MacroAssembler::CheckEitherSmi(v8::internal::Register, v8::internal::Register, v8::internal::Register)
+      1    0.2%    0.2%  v8::internal::Logger::CodeEndLinePosInfoRecordEvent(v8::internal::AbstractCode*, void*)
+      1    0.2%    0.2%  v8::internal::LoadICNexus::StateFromFeedback() const
+      1    0.2%    0.2%  v8::internal::LoadDescriptor::ReceiverRegister()
+      1    0.2%    0.2%  v8::internal::LiveRange::Covers(v8::internal::LifetimePosition)
+      1    0.2%    0.2%  v8::internal::Literal::Accept(v8::internal::AstVisitor*)
+      1    0.2%    0.2%  v8::internal::LTemplateResultInstruction<1>::MustSignExtendResult(v8::internal::LPlatformChunk*) const
+      1    0.2%    0.2%  v8::internal::LCodeGen::WriteTranslation(v8::internal::LEnvironment*, v8::internal::Translation*)
+      1    0.2%    0.2%  v8::internal::LAllocator::AllocateRegisters()
+      1    0.2%    0.2%  v8::internal::KeywordOrIdentifierToken(unsigned char const*, int, bool) [clone .part.0]
+      1    0.2%    0.2%  v8::internal::JsonParser<false>::CommitStateToJsonObject(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, v8::internal::ZoneList<v8::internal::Handle<v8::internal::Object> >*) [clone .isra.450]
+      1    0.2%    0.2%  v8::internal::JSObjectWalkVisitor<v8::internal::AllocationSiteUsageContext>::StructureWalk(v8::internal::Handle<v8::internal::JSObject>)
+      1    0.2%    0.2%  v8::internal::JSObject::SetPrototypeUnobserved(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Object::ShouldThrow)
+      1    0.2%    0.2%  v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      1    0.2%    0.2%  v8::internal::JSObject::AddSlowProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes)
+      1    0.2%    0.2%  v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object*)
+      1    0.2%    0.2%  v8::internal::IC::UpdateState(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::IC::ComputeHandler(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::HeapObjectIterator::Next()
+      1    0.2%    0.2%  v8::internal::HeapObject::SizeFromMap(v8::internal::Map*)
+      1    0.2%    0.2%  v8::internal::Heap::DoScavenge(v8::internal::ObjectVisitor*, unsigned char*)
+      1    0.2%    0.2%  v8::internal::HStoreNamedField::RequiredInputRepresentation(int)
+      1    0.2%    0.2%  v8::internal::HRepresentationChangesPhase::Run()
+      1    0.2%    0.2%  v8::internal::HRepresentationChangesPhase::InsertRepresentationChangesForValue(v8::internal::HValue*)
+      1    0.2%    0.2%  v8::internal::HOptimizedGraphBuilder::context()
+      1    0.2%    0.2%  v8::internal::HInstruction::InsertAfter(v8::internal::HInstruction*)
+      1    0.2%    0.2%  v8::internal::HGraph::CreateBasicBlock()
+      1    0.2%    0.2%  v8::internal::HGlobalValueNumberingPhase::ComputeBlockSideEffects()
+      1    0.2%    0.2%  v8::internal::HEnvironmentLivenessAnalysisPhase::Run()
+      1    0.2%    0.2%  v8::internal::HCallWithDescriptor::opcode() const
+      1    0.2%    0.2%  v8::internal::FullCodeGenerator::result_register()
+      1    0.2%    0.2%  v8::internal::FullCodeGenerator::VisitIfStatement(v8::internal::IfStatement*)
+      1    0.2%    0.2%  v8::internal::FullCodeGenerator::TestContext::IsTest() const
+      1    0.2%    0.2%  v8::internal::FullCodeGenerator::Split(v8::internal::Condition, v8::internal::Label*, v8::internal::Label*, v8::internal::Label*)
+      1    0.2%    0.2%  v8::internal::FlexibleBodyVisitor<v8::internal::MarkCompactMarkingVisitor, v8::internal::FlexibleBodyDescriptor<16>, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.2%    0.2%  v8::internal::Expression::IsAnonymousFunctionDefinition() const
+      1    0.2%    0.2%  v8::internal::Execution::New(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*)
+      1    0.2%    0.2%  v8::internal::Deserializer::ReadObject(int, v8::internal::Object**)
+      1    0.2%    0.2%  v8::internal::Deserializer::PostProcessNewObject(v8::internal::HeapObject*, int)
+      1    0.2%    0.2%  v8::internal::DescriptorArray::GetFieldType(int)
+      1    0.2%    0.2%  v8::internal::DescriptorArray::Append(v8::internal::Descriptor*)
+      1    0.2%    0.2%  v8::internal::CompilationPhase::~CompilationPhase()
+      1    0.2%    0.2%  v8::internal::CompilationCacheTable::Age()
+      1    0.2%    0.2%  v8::internal::CompareOperation::Accept(v8::internal::AstVisitor*)
+      1    0.2%    0.2%  v8::internal::CodeCache::UpdateDefaultCache(v8::internal::Handle<v8::internal::CodeCache>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Code>)
+      1    0.2%    0.2%  v8::internal::CodeAgingHelper::CodeAgingHelper(v8::internal::Isolate*)
+      1    0.2%    0.2%  v8::internal::CallRuntime::Accept(v8::internal::AstVisitor*)
+      1    0.2%    0.2%  v8::internal::BufferedUtf16CharacterStream::PushBack(int)
+      1    0.2%    0.2%  v8::internal::BasicJsonStringifier::SerializeString(v8::internal::Handle<v8::internal::String>)
+      1    0.2%    0.2%  v8::internal::BasicJsonStringifier::Result v8::internal::BasicJsonStringifier::Serialize_<false>(v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Handle<v8::internal::Object>)
+      1    0.2%    0.2%  v8::internal::AstValueFactory::GetString(unsigned int, bool, v8::internal::Vector<unsigned char const>)
+      1    0.2%    0.2%  v8::internal::AstNumberingVisitor::VisitUnaryOperation(v8::internal::UnaryOperation*)
+      1    0.2%    0.2%  v8::internal::AstNumberingVisitor::VisitProperty(v8::internal::Property*)
+      1    0.2%    0.2%  v8::internal::AstNumberingVisitor::VisitIfStatement(v8::internal::IfStatement*)
+      1    0.2%    0.2%  v8::internal::AstNumberingVisitor::Renumber(v8::internal::FunctionLiteral*)
+      1    0.2%    0.2%  v8::internal::Assignment::node_type() const
+      1    0.2%    0.2%  v8::internal::AssemblerPositionsRecorder::WriteRecordedPositions()
+      1    0.2%    0.2%  v8::internal::AssemblerBase::FlushICache(v8::internal::Isolate*, void*, unsigned long)
+      1    0.2%    0.2%  v8::internal::Assembler::movp(v8::internal::Register, void*, v8::internal::RelocInfo::Mode)
+      1    0.2%    0.2%  v8::internal::Assembler::emit_mov(v8::internal::Register, v8::internal::Register, int)
+      1    0.2%    0.2%  v8::internal::Assembler::emit_mov(v8::internal::Operand const&, v8::internal::Register, int)
+      1    0.2%    0.2%  v8::internal::AppendCodeCreateHeader(v8::internal::Log::MessageBuilder*, v8::internal::Logger::LogEventsAndTags, v8::internal::AbstractCode*)
+      1    0.2%    0.2%  v8::internal::ActionNode::FillInBMInfo(v8::internal::Isolate*, int, int, v8::internal::BoyerMooreLookahead*, bool)
+      1    0.2%    0.2%  v8::internal::(anonymous namespace)::GetOptimizedCode(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Compiler::ConcurrencyMode, v8::internal::BailoutId, v8::internal::JavaScriptFrame*)
+      1    0.2%    0.2%  v8::internal::(anonymous namespace)::CopyObjectToObjectElements(v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, int)
+      1    0.2%    0.2%  v8::Value::IsUint8Array() const
+      1    0.2%    0.2%  v8::Isolate::GetCurrentContext()
+      1    0.2%    0.2%  uv__work_done
+      1    0.2%    0.2%  uv__async_event
+      1    0.2%    0.2%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.2%    0.2%  ssl3_read
+      1    0.2%    0.2%  sha256_block_data_order
+      1    0.2%    0.2%  node::crypto::SecureContext::SetECDHCurve(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::crypto::SecureContext::Init(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  node::InternalModuleReadFile(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.2%    0.2%  mmap
+      1    0.2%    0.2%  cfree
+      1    0.2%    0.2%  bool v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::SemiSpaceCopyObject<(v8::internal::AllocationAlignment)0>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+      1    0.2%    0.2%  bool v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::SemiSpaceCopyObject<(v8::internal::AllocationAlignment)0>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+      1    0.2%    0.2%  __lxstat
+      1    0.2%    0.2%  __lll_lock_wait
+      1    0.2%    0.2%  __libc_realloc
+      1    0.2%    0.2%  __dynamic_cast
+      1    0.2%    0.2%  __GI___pthread_getspecific
+      1    0.2%    0.2%  BN_sub
+      1    0.2%    0.2%  BN_mod_mul_montgomery
+      1    0.2%    0.2%  ASN1_object_size
+
+ [Summary]:
+   ticks  total  nonlib   name
+     28    5.3%    5.6%  JavaScript
+    428   81.4%   85.4%  C++
+     26    4.9%    5.2%  GC
+     25    4.8%          Shared libraries
+     45    8.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     87   24.7%   16.5%  v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     68   19.3%   12.9%  v8::internal::Builtin_HandleApiCallConstruct(int, v8::internal::Object**, v8::internal::Isolate*)
+     42   11.9%    8.0%  v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     29    8.2%    5.5%  v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     24    6.8%    4.6%  v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    5.1%    3.4%  v8::internal::Runtime_ParseJson(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    2.8%    1.9%  v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    2.8%    1.9%  v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      9    2.6%    1.7%  v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    1.7%    1.1%  v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    1.4%    1.0%  v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    1.1%    0.8%  v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    1.1%    0.8%  v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.9%    0.6%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.9%    0.6%  v8::internal::Runtime_BasicJSONStringify(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Runtime_StringCharCodeAtRT(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Runtime_ResolvePossiblyDirectEval(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Runtime_Interrupt(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Runtime_AllocateInTargetSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  v8::internal::Builtin_ArrayBufferConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.6%    0.4%  __xstat
+      1    0.3%    0.2%  write
+      1    0.3%    0.2%  v8::internal::Runtime_ToBooleanIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_NumberToRadixString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_NotifyDeoptimized(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_NewClosure_Tenured(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_InternalSetPrototype(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_CreateRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Runtime_CompareIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Execution::New(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*)
+      1    0.3%    0.2%  v8::internal::Builtin_ObjectKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::internal::Builtin_DateConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.3%    0.2%  v8::Value::IsUint8Array() const
+      1    0.3%    0.2%  node::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.3%    0.2%  __lxstat
+      1    0.3%    0.2%  __GI___pthread_getspecific
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+     66   12.5%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     66  100.0%    v8::internal::Builtin_HandleApiCallConstruct(int, v8::internal::Object**, v8::internal::Isolate*)
+     40   60.6%      LazyCompile: ~exports.runInThisContext vm.js:75:36
+     40  100.0%        LazyCompile: ~Module._compile module.js:510:37
+     40  100.0%          LazyCompile: ~Module._extensions..js module.js:577:37
+     40  100.0%            LazyCompile: ~Module.load module.js:478:33
+     26   39.4%      LazyCompile: ~runInThisContext bootstrap_node.js:403:28
+     26  100.0%        LazyCompile: NativeModule.compile bootstrap_node.js:485:44
+     26  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:419:34
+      4   15.4%            LazyCompile: ~startup bootstrap_node.js:12:19
+      3   11.5%            Function: ~<anonymous> module.js:1:11
+      3   11.5%            Function: ~<anonymous> http.js:1:11
+      2    7.7%            LazyCompile: ~setupGlobalVariables bootstrap_node.js:202:32
+      2    7.7%            LazyCompile: ~Module._load module.js:412:24
+      2    7.7%            Function: ~<anonymous> tls.js:1:11
+      1    3.8%            LazyCompile: ~setupGlobalTimeouts bootstrap_node.js:230:31
+      1    3.8%            LazyCompile: ~lookupAndConnect net.js:942:26
+      1    3.8%            LazyCompile: ~listen net.js:1289:16
+      1    3.8%            Function: ~<anonymous> tty.js:1:11
+      1    3.8%            Function: ~<anonymous> timers.js:1:11
+      1    3.8%            Function: ~<anonymous> stream.js:1:11
+      1    3.8%            Function: ~<anonymous> crypto.js:1:11
+      1    3.8%            Function: ~<anonymous> cluster.js:1:11
+      1    3.8%            Function: ~<anonymous> child_process.js:1:11
+      1    3.8%            Function: ~<anonymous> _tls_wrap.js:1:11
+
+     45    8.6%  UNKNOWN
+      1    2.2%    LazyCompile: ~onread net.js:530:16
+
+     37    7.0%  write
+      9   24.3%    v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   11.1%      LazyCompile: ~initSocketHandle net.js:105:26
+      1  100.0%        LazyCompile: ~Socket net.js:125:16
+      1  100.0%          LazyCompile: ~onconnection net.js:1434:22
+      1   11.1%      LazyCompile: ~fs.Stats fs.js:150:20
+      1  100.0%        node::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          LazyCompile: ~fs.lstatSync fs.js:980:24
+      1  100.0%            LazyCompile: ~realpathSync fs.js:1592:40
+      1   11.1%      LazyCompile: ~_addListener events.js:210:22
+      1  100.0%        LazyCompile: ~addListener events.js:274:58
+      1  100.0%          LazyCompile: ~Readable.on _stream_readable.js:686:33
+      1  100.0%            LazyCompile: ~TLSSocket._wrapHandle _tls_wrap.js:335:43
+      1   11.1%      LazyCompile: ~Writable _stream_writable.js:157:18
+      1  100.0%        LazyCompile: ~Duplex _stream_duplex.js:23:16
+      1  100.0%          LazyCompile: ~Socket net.js:125:16
+      1  100.0%            LazyCompile: ~TLSSocket _tls_wrap.js:236:19
+      1   11.1%      LazyCompile: ~Socket net.js:125:16
+      1  100.0%        LazyCompile: ~TLSSocket _tls_wrap.js:236:19
+      1  100.0%          LazyCompile: ~exports.connect _tls_wrap.js:987:27
+      1  100.0%            LazyCompile: ~createConnection https.js:53:26
+      1   11.1%      LazyCompile: ~ServerResponse.writeHead _http_server.js:160:46
+      1  100.0%        LazyCompile: ~ServerResponse._implicitHeader _http_server.js:156:52
+      1  100.0%          LazyCompile: ~OutgoingMessage.end _http_outgoing.js:545:41
+      1  100.0%            LazyCompile: ~send /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/response.js:106:25
+      1   11.1%      LazyCompile: ~ReadableState _stream_readable.js:35:23
+      1  100.0%        LazyCompile: ~Readable _stream_readable.js:104:18
+      1  100.0%          LazyCompile: ~Duplex _stream_duplex.js:23:16
+      1  100.0%            LazyCompile: ~Socket net.js:125:16
+      1   11.1%      LazyCompile: ~Glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:115:15
+      1  100.0%        LazyCompile: ~glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:64:15
+      1  100.0%          LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:269:49
+      1  100.0%            LazyCompile: Promise native promise.js:42:23
+      1   11.1%      LazyCompile: ~EventEmitter.init events.js:42:29
+      1  100.0%        LazyCompile: ~EventEmitter events.js:11:22
+      1  100.0%          LazyCompile: ~Agent _http_agent.js:20:15
+      1  100.0%            LazyCompile: ~Agent https.js:99:15
+      7   18.9%    v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   14.3%      Stub: CEntryStub
+      1  100.0%        LazyCompile: ~SpeciesConstructor native runtime.js:40:28
+      1  100.0%          LazyCompile: ~then native promise.js:215:21
+      1  100.0%            LazyCompile: ~ExpressHandlebars._getDir /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:252:48
+      1   14.3%      LazyCompile: ~onstat /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/send/index.js:729:33
+      1  100.0%        LazyCompile: ~<anonymous> fs.js:122:18
+      1   14.3%      LazyCompile: ~g events.js:287:13
+      1  100.0%        LazyCompile: ~emitNone events.js:84:18
+      1  100.0%          LazyCompile: ~emit events.js:136:44
+      1  100.0%            LazyCompile: ~afterConnect net.js:1051:22
+      1   14.3%      LazyCompile: ~connectionListener _http_server.js:264:28
+      1  100.0%        LazyCompile: ~emitOne events.js:94:17
+      1  100.0%          LazyCompile: ~emit events.js:136:44
+      1  100.0%            LazyCompile: ~onconnection net.js:1434:22
+      1   14.3%      LazyCompile: ~TLSSocket _tls_wrap.js:236:19
+      1  100.0%        LazyCompile: ~exports.connect _tls_wrap.js:987:27
+      1  100.0%          LazyCompile: ~createConnection https.js:53:26
+      1  100.0%            LazyCompile: ~Agent.createSocket _http_agent.js:176:40
+      1   14.3%      LazyCompile: ~Socket.connect net.js:887:36
+      1  100.0%        LazyCompile: ~exports.connect _tls_wrap.js:987:27
+      1  100.0%          LazyCompile: ~createConnection https.js:53:26
+      1  100.0%            LazyCompile: ~Agent.createSocket _http_agent.js:176:40
+      1   14.3%      Function: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/finalhandler/node_modules/debug/src/node.js:1:11
+      1  100.0%        LazyCompile: ~Module._compile module.js:510:37
+      1  100.0%          LazyCompile: ~Module._extensions..js module.js:577:37
+      1  100.0%            LazyCompile: ~Module.load module.js:478:33
+      5   13.5%    v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   20.0%      LazyCompile: ~mergeSource /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:259:36
+      1  100.0%        LazyCompile: ~createFunctionContext /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:214:56
+      1  100.0%          LazyCompile: ~compile /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:71:28
+      1  100.0%            LazyCompile: ~compileChildren /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:778:44
+      1   20.0%      LazyCompile: ~initSocketHandle net.js:105:26
+      1  100.0%        LazyCompile: ~Socket net.js:125:16
+      1  100.0%          LazyCompile: ~TLSSocket _tls_wrap.js:236:19
+      1  100.0%            LazyCompile: ~exports.connect _tls_wrap.js:987:27
+      1   20.0%      LazyCompile: ~connectionListener _http_server.js:264:28
+      1  100.0%        LazyCompile: ~emitOne events.js:94:17
+      1  100.0%          LazyCompile: ~emit events.js:136:44
+      1  100.0%            LazyCompile: ~onconnection net.js:1434:22
+      1   20.0%      LazyCompile: ~Socket._write net.js:730:35
+      1  100.0%        LazyCompile: ~doWrite _stream_writable.js:326:17
+      1  100.0%          LazyCompile: ~clearBuffer _stream_writable.js:403:21
+      1  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:259:37
+      1   20.0%      LazyCompile: ~ExpressHandlebars.getTemplates /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:133:53
+      1  100.0%        LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:54:46
+      1  100.0%          LazyCompile: ~map native array.js:994:18
+      1  100.0%            LazyCompile: ~ExpressHandlebars.getPartials /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:50:52
+      3    8.1%    v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   66.7%      LazyCompile: ~_addListener events.js:210:22
+      2  100.0%        LazyCompile: ~addListener events.js:274:58
+      1   50.0%          LazyCompile: ~Readable.on _stream_readable.js:686:33
+      1  100.0%            LazyCompile: ~connectionListener _http_server.js:264:28
+      1   50.0%          LazyCompile: ~Glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:115:15
+      1  100.0%            LazyCompile: ~glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:64:15
+      1   33.3%      LazyCompile: ~Socket net.js:125:16
+      1  100.0%        LazyCompile: ~TLSSocket _tls_wrap.js:236:19
+      1  100.0%          LazyCompile: ~exports.connect _tls_wrap.js:987:27
+      1  100.0%            LazyCompile: ~createConnection https.js:53:26
+      2    5.4%    v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+      2  100.0%      LazyCompile: ~exec native regexp.js:116:30
+      2  100.0%        LazyCompile: ~RegExpSubclassExec native regexp.js:207:28
+      2  100.0%          LazyCompile: ~[Symbol.match] native regexp.js:430:29
+      2  100.0%            LazyCompile: ~match native string.js:105:23
+      1    2.7%    v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~ServerResponse.writeHead _http_server.js:160:46
+      1  100.0%        LazyCompile: ~ServerResponse._implicitHeader _http_server.js:156:52
+      1  100.0%          LazyCompile: ~OutgoingMessage.end _http_outgoing.js:545:41
+      1  100.0%            LazyCompile: ~send /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/response.js:106:25
+      1    2.7%    LazyCompile: handle /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%      LazyCompile: ~trim_prefix /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:288:23
+      1  100.0%        LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:275:64
+      1  100.0%          LazyCompile: ~process_params /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:327:47
+      1  100.0%            LazyCompile: ~next /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:176:16
+
+     30    5.7%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+     30  100.0%    v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     30  100.0%      LazyCompile: ~createSecureContext _tls_common.js:38:59
+     30  100.0%        LazyCompile: ~exports.connect _tls_wrap.js:987:27
+     30  100.0%          LazyCompile: ~createConnection https.js:53:26
+     30  100.0%            LazyCompile: ~Agent.createSocket _http_agent.js:176:40
+
+     24    4.6%  syscall
+
+     23    4.4%  /lib/x86_64-linux-gnu/libc-2.23.so
+      8   34.8%    v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   12.5%      node::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%        LazyCompile: ~socketOnData _http_client.js:356:22
+      1  100.0%          LazyCompile: ~emitOne events.js:94:17
+      1  100.0%            LazyCompile: ~emit events.js:136:44
+      1   12.5%      LazyCompile: ~send /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/response.js:106:25
+      1  100.0%        LazyCompile: ~done /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/response.js:960:27
+      1  100.0%          LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/utils.js:25:31
+      1  100.0%            LazyCompile: ~runCallback timers.js:631:21
+      1   12.5%      LazyCompile: ~normalize /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/amdefine/amdefine.js:62:23
+      1  100.0%        LazyCompile: ~stringRequire /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/amdefine/amdefine.js:196:30
+      1  100.0%          LazyCompile: ~amdRequire /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/amdefine/amdefine.js:110:28
+      1  100.0%            LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/source-map/lib/source-map/source-map-generator.js:10:17
+      1   12.5%      LazyCompile: ~next /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:176:16
+      1  100.0%        LazyCompile: ~handle /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/router/index.js:136:31
+      1  100.0%          LazyCompile: ~handle /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/application.js:158:29
+      1  100.0%            LazyCompile: ~app /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express/lib/express.js:37:21
+      1   12.5%      LazyCompile: ~go$readFile /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/graceful-fs/graceful-fs.js:72:26
+      1  100.0%        LazyCompile: ~readFile /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/graceful-fs/graceful-fs.js:66:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:303:51
+      1  100.0%            LazyCompile: Promise native promise.js:42:23
+      1   12.5%      LazyCompile: ~emitNone events.js:84:18
+      1  100.0%        LazyCompile: ~emit events.js:136:44
+      1  100.0%          LazyCompile: ~TLSSocket._finishInit _tls_wrap.js:580:43
+      1  100.0%            LazyCompile: ~ssl.onhandshakedone _tls_wrap.js:433:27
+      1   12.5%      LazyCompile: ~Socket.end net.js:427:32
+      1  100.0%        LazyCompile: ~Socket.destroySoon net.js:453:40
+      1  100.0%          LazyCompile: ~responseKeepAlive _http_client.js:486:27
+      1  100.0%            LazyCompile: ~responseOnEnd _http_client.js:510:23
+      1   12.5%      LazyCompile: check tls.js:80:15
+      1  100.0%        LazyCompile: ~wildcard tls.js:175:22
+      1  100.0%          LazyCompile: ~InnerArraySome native array.js:960:24
+      1  100.0%            LazyCompile: ~some native array.js:971:19
+      1    4.3%    v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~setopts /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/common.js:53:18
+      1  100.0%        LazyCompile: ~Glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:115:15
+      1  100.0%          LazyCompile: ~glob /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/glob/glob.js:64:15
+      1  100.0%            LazyCompile: ~<anonymous> /home/orlando/Documentos/UTN/MercadoLibre/clases/resources/06/deploy/mercadolibre_1/node_modules/express-handlebars/lib/express-handlebars.js:269:49
+      1    4.3%    v8::internal::Runtime_NumberToRadixString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~toString native v8natives.js:642:26
+      1  100.0%        Function: ~<anonymous> querystring.js:1:11
+      1  100.0%          LazyCompile: NativeModule.compile bootstrap_node.js:485:44
+      1  100.0%            LazyCompile: ~NativeModule.require bootstrap_node.js:419:34
+      1    4.3%    v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~resume_ _stream_readable.js:734:17
+      1  100.0%        LazyCompile: ~_combinedTickCallback internal/process/next_tick.js:65:33
+      1  100.0%          LazyCompile: ~_tickCallback internal/process/next_tick.js:87:25
+      1    4.3%    v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~parserOnMessageComplete _http_common.js:129:33
+

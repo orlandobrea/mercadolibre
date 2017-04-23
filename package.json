@@ -1,0 +1,18 @@
+{
+  "name": "CursoML",
+  "version": "1.0.0",
+  "scripts": {
+    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha tests/** --colors --reporter mocha-jenkins-reporter"
+  },
+  "dependencies" : {
+    "express": "",
+    "express-handlebars": ""
+  },
+  "devDependencies" : {
+  	"mocha": "",
+  	"chai": "",
+  	"nock": "",
+    "mocha-jenkins-reporter": "0.3.7"
+
+  }
+}
