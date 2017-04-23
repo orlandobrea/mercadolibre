@@ -37,7 +37,7 @@ module.exports = {
       port: '2222',
       host : '172.17.0.1',
       ref  : 'origin/master',
-      repo : 'http://mercadolibre@172.17.0.1/mercadolibre/mercadolibre_1.git',
+      repo : 'https://github.com/orlandobrea/mercadolibre.git',
       path : '/var/www/production',
       //'pre-setup': 'apt-get update && apt-get install -y git build-essential libssl-dev curl && curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh && source /root/.profile && nvm install v6.10.2 && nvm use v6.10.2',
       'pre-setup': 'rm -Rf /var/www/production ',
