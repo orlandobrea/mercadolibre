@@ -17,7 +17,7 @@ describe('Service', function() {
 						}
 					);
 		nock('https://api.mercadolibre.com')
-					.get('/items/MLA609126692/description.json')
+					.get('/items/MLA609126692/description')
 					.reply(200, 
 						{	
 							id: 'propiedad esperada'
@@ -32,6 +32,10 @@ describe('Service', function() {
 	it('Validar que NO retorne un producto que no existe', function() {
 		var mockServer = nock('https://api.mercadolibre.com')
 					.get('/items/MLA6091266929')
+					.reply(404, 
+						{}
+					)
+					.get('/items/MLA6091266929/description')
 					.reply(404, 
 						{}
 					);
